@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>"Exercício CSS"</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <a href="index.html"><p id="cvVoltar">⮐</p></a>
+        <center>
+            <h1>CSS</h1>
+        <br>
+        <code>
+            HTML: <br>
+            &lt;table id="tabela" align="center" cellspacing="2px"&gt;&lt;tr&gt;&lt;td colspan="6" id="titulo1"&gt;Cidades mais populosas da Bahia&lt;br&gt;(estimativa de 2009 do Instituto Brasileiro de Geografia e Estatística)&lt;/td&gt;&lt;/tr&gt;&lt;tr id="titulo2"&gt;&lt;td align="center"&gt;Posição&lt;/td&gt;&lt;td align="left"&gt;Cidade&lt;/td&gt;&lt;td align="center"&gt;Pop.&lt;/td&gt;&lt;td align="center"&gt;Posição&lt;/td&gt;&lt;td align="left"&gt;Cidade&lt;/td&gt;&lt;td align="center"&gt;Pop.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="pos" align="center"&gt;1&lt;/td&gt;&lt;td class="cidades" align="left"&gt;Salvador&lt;/td&gt;&lt;td class="pop"&gt;2 988 056&lt;/td&gt;&lt;td class="pos" align=center&gt;3&lt;/td&gt;&lt;td class="cidades" align="left"&gt;Vitória da Conquista&lt;/td&gt;&lt;td class="pop"&gt;318 901&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td class="pos" align="center"&gt;2&lt;/td&gt;&lt;td class="cidades" align="left"&gt;Feira de Santana&lt;/td&gt;&lt;td class="pop"&gt;591 707&lt;/td&gt;&lt;td class="pos" align=center&gt;4&lt;/td&gt;&lt;td class="cidades" align="left"&gt;Juazeiro&lt;/td&gt;&lt;td class="pop"&gt;243 896&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+            <br><br>
+            CSS: <br>
+            #tabela{padding: 2px; width: 600px; font-size: 12px; font-family: Arial; text-align: center; background-color: #C7E7F3; border: none;}
+            <br>#titulo1{background-color: #0D5188; color: white; font-weight: bold;} <br>
+            #titulo2{background-color: #66C5E3; font-weight: bold;}<br>
+            .pos{background-color: silver;width: 10%;} <br>
+            .pop{width: 15%;} <br>
+            .cidades{color: #0D5188;font-weight: bold;}
+        </code>
+        <br><br>
+        <table id="tabela" align="center" cellspacing="2px">
+            <tr>
+                <td colspan="6" id="titulo1">Cidades mais populosas da Bahia<br>(estimativa de 2009 do Instituto Brasileiro de Geografia e Estatística)</td>
+            </tr>
+            <tr id="titulo2">
+                <td align="center">Posição</td>
+                <td align="left">Cidade</td>
+                <td align="center">Pop.</td>
+                <td align="center">Posição</td>
+                <td align="left">Cidade</td>
+                <td align="center">Pop.</td>
+            </tr>
+            <tr>
+                <td class="pos" align="center">1</td>
+                <td class="cidades" align="left">Salvador</td>
+                <td class="pop">2 988 056</td>
+                <td class="pos" align=center>3</td>
+                <td class="cidades" align="left">Vitória da Conquista</td>
+                <td class="pop">318 901</td>
+            </tr>
+            <tr>
+                <td class="pos" align="center">2</td>
+                <td class="cidades" align="left">Feira de Santana</td>
+                <td class="pop">591 707</td>
+                <td class="pos" align=center>4</td>
+                <td class="cidades" align="left">Juazeiro</td>
+                <td class="pop">243 896</td>
+            </tr>
+        </table>
+        </center>
+    </body>
+</html>

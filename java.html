@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>"Exercícios JavaScript"</title>
+        <body>
+            <a href="index.html"><p id="cvVoltar">⮐</p></a>
+            <center>
+                <h3>Crie um aplicativo que receba uma temperatura qualquer em Fahrenheit e apresente seu correspondente em Celsius por meio de uma Função. Para o calculo utilize a seguinte fórmula: Celsius=5.0/9.0*(F-32)</h3>
+            <br>
+            <code>
+                &lt;input type="number" id="nF"&gt;&lt;br&gt;&lt;br&gt;&lt;button onclick="converterCelsius(document.getElementById('nF').value)"&gt;Converter para Celsius&lt;/button&gt;&lt;p id="resultado"&gt;&lt;/p&gt;&lt;script&gt;function converterCelsius(F){
+                var C=(5.0/9.0*(F-32));
+                document.getElementById("resultado").innerHTML="A tempertura equivale à " + C + " graus celsius";
+            }
+        &lt;/script&gt;
+            </code>    
+            <br><br>
+        <input type="number" id="nF">
+        <br>
+        <button onclick="converterCelsius(document.getElementById('nF').value)">Converter para Celsius</button>
+        <p id="resultado"></p>
+        <script>
+            function converterCelsius(F){
+                var C=(5.0/9.0*(F-32));
+                document.getElementById("resultado").innerHTML="A tempertura equivale à " + C + " graus celsius";
+            }
+        </script>
+        <br>
+        <br><br>
+        <h3>Imprima a tabela de tabuada de um determinado número</h3>
+        <br>
+        <code>
+            &lt;input type="number" id="num"&gt;&lt;br&gt;&lt;br&gt;&lt;button onclick="gerarTabuada(document.getElementById('num').value)"&gt;Gerar tabuada&lt;/button&gt;&lt;p id="tabuada"&gt;&lt;/p&gt;&lt;script&gt;function gerarTabuada(num){var str="Tabuada do &lt;strong&gt;" + num + "&lt;/strong&gt;: &lt;br&gt;";for(i=1; i&lt;=10; i++){str=str+num+"x"+i+" = "+(num*i)+"&lt;br&gt;";}document.getElementById("tabuada").innerHTML=str;}&lt;/script&gt;
+        </code>
+        <br><br>
+        <input type="number" id="num">
+        <br>
+        <button onclick="gerarTabuada(document.getElementById('num').value)">Gerar tabuada</button>
+        <p id="tabuada"></p>
+        <script>
+            function gerarTabuada(num){
+                var str="Tabuada do <strong>" + num + "</strong>: <br>";
+                for(i=1; i<=10; i++){
+                    str=str+num+"x"+i+" = "+(num*i)+"<br>";
+                }
+                document.getElementById("tabuada").innerHTML=str;
+            }
+        </script>
+            </center>
+        </body>
+    </head>
+</html>
